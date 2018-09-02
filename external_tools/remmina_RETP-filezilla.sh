@@ -4,7 +4,9 @@
 settitle
 
 if [ -z $ssh_privatekey ]; then
-    filezilla -l ask sftp://$ssh_username@$server
+    nohup filezilla -l ask sftp://$ssh_username@$server > /dev/null 2>&1 &
 else
-    filezilla -c 0/$name
+    nohup filezilla -c 0/$name > /dev/null 2>&1 &
 fi
+
+sleep 1
