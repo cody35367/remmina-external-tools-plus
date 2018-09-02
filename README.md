@@ -21,7 +21,7 @@ This script is called by most other scripts and is used to setup common variable
 
 ### `install.sh` :
 
-This script is used to install the remmina external tools scripts in place for the Remmina gui to use and present as menu options.
+This script is used to install the Remmina external tools scripts in place for the Remmina gui to use and present as menu options.
 
 ### `remove-defaults.sh` :
 
@@ -37,11 +37,11 @@ This script will restore the previously moved default external tools scripts.
 
 ## How to use
 
-The external tool scripts provided in this project only work with an SSH protocol connection object within remmina. This means that for any SSH connection added in the Remmina GUI these should work for. To access these external tool integrations, simply right-click your SSH connection object in Remmina and select External Tools or you can simply press Ctrl+T with the SSH object selected. You will see any option for each main script in this project.
+The external tool scripts provided in this project only work with an SSH protocol connection object within Remmina. This means that for any SSH connection added in the Remmina GUI these should work for. To access these external tool integrations, simply right-click your SSH connection object in Remmina and select External Tools or you can simply press Ctrl+T with the SSH object selected. You will see any option for each main script in this project.
 
 ### Gnome Terminal (./external_tools/*RETP-gterminal.sh)
 
-The gnome-terminal integration simply opens the ssh session in gnome-terminal. This allows you to overcome some of the limitations of the Remmina terminal. If you disconnect you can simply type `$CURR_SSH_COMMAND` in the stilling running shell to restore your session without going through the Remmina GUI again. You can also add addtional SSH command line arguments by configuring the "SSH Proxy Command" in your Remmina SSH profile. At minimum you must have the the server name and the username configured. Passwords will not be passed, you must enter once the terminal comes up. Support will private key passing will be coming soon.
+The gnome-terminal integration simply opens the ssh session in gnome-terminal. This allows you to overcome some of the limitations of the Remmina terminal. If you disconnect you can simply type `$CURR_SSH_COMMAND` in the stilling running shell to restore your session without going through the Remmina GUI again. You can also add addtional SSH command line arguments by configuring the "SSH Proxy Command" in your Remmina SSH profile. At minimum you must have the the server name and the username configured. Passwords will not be passed, you must enter once the terminal comes up. Private key passing is supported by specifying the key file in the Remmina SSH profile.
 
 ### Filezilla (./external_tools/*RETP-filezilla.sh)
 
@@ -49,7 +49,7 @@ For filezilla I simply upgraded the existing `remmina_filezilla_sftp.sh` to prom
 
 ## Dev script
 
-You will have to manually move the script(s) in external_tools_dev. This scripts will help with development of these tool integration sctipts.
+You will have to manually move the script(s) in external_tools_dev. This scripts will help with development of these tool integration scripts.
 
 ### Show env (./external_tools_dev/*RETP-env.sh)
 
