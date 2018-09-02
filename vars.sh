@@ -1,0 +1,3 @@
+#!/bin/bash
+REMMINA_EXTERNAL_TOOLS_DIR=/usr/share/remmina/external_tools
+REMMINA_EXTERNAL_TOOLS_DEFAULTS="$REMMINA_EXTERNAL_TOOLS_DIR/remmina_filezilla_sftp_pki.sh $REMMINA_EXTERNAL_TOOLS_DIR/remmina_filezilla_sftp.sh $REMMINA_EXTERNAL_TOOLS_DIR/remmina_nslookup.sh $REMMINA_EXTERNAL_TOOLS_DIR/remmina_ping.sh $REMMINA_EXTERNAL_TOOLS_DIR/remmina_traceroute.sh"
